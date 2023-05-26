@@ -1,0 +1,70 @@
+.hamBox, .hamBoxActive {
+	display: inline-block;
+	content: "";
+	height: 3.2rem;
+	border-radius: 4px;
+}
+.hamBoxActive {
+	width: 3rem;
+}
+.hamBox {
+	width: 3.4rem;
+}
+.hamburguer,
+.hamburguerActive {
+	position: absolute;
+	top: 50%;
+	right: 0px;
+	width: 3rem;
+	height: 2px;
+	border-radius: 0.4rem;
+}
+.hamburguer {
+	background-color: var(--rojoP);
+	transform: rotate(0deg);
+	transition: transform 0.083s linear;
+}
+.hamburguerActive {
+	background-color: white;
+	transform: rotate(-45deg);
+	transition: transform 0.083s linear 0.45s, background-color 0s linear 0.25s;
+}
+.hamburguer::before, 
+.hamburguer::after,
+.hamburguerActive::before,
+.hamburguerActive::after {
+	content: "";
+	display: block;
+	position: absolute;
+	left: auto;
+	right: 0px;
+	height: 2px;
+	border-radius: 4px;
+	background-color: var(--rojoP);
+}
+.hamburguer::before {
+	width: 120%;
+	top: -10px;
+	opacity: 1;
+	transition: 0.25s width ease-in 0.25s, top 0.25s ease-in 0.25s,opacity 0.25s ease-in;
+}
+.hamburguer::after {
+	width: 80%;
+	bottom: -10px;
+	transform: rotate(0deg);
+	transition: 0.25s width ease-in 0.25s, bottom 0.25s ease-in 0.25s, transform 0.167s linear 0.083s;
+}
+.hamburguerActive::before {
+	background-color: white;
+	width: 100%;
+	top: 0px;
+	opacity: 0;
+	transition: 0.25s width linear, top 0.25s linear, opacity 0.25s ease-in 0.25s, background-color 0s linear 0.25s;
+}
+.hamburguerActive::after {
+	background-color: white;
+	width: 100%;
+	bottom: 0px;
+	transform: rotate(-90deg);
+	transition: width 0.25s linear, bottom 0.25s linear, transform 0.167s linear 0.283s, background-color 0s linear 0.25s;
+}

@@ -1,0 +1,70 @@
+.contenedorPrincipal {
+   margin: 0 auto;
+}
+
+.contenedorMain {
+	width: 100%;
+	margin: auto 0 auto;
+}
+@media (min-width: 768px) {
+	.contenedorMain {
+		width: min(75%, 120rem);
+		margin: 0 auto 0 auto;
+	}
+}
+@media (min-width: 1140px) {
+	.contenedorMain {
+		width: min(75%, 220rem);
+	}	 
+}
+@media (min-width: 1320px) {
+	.contenedorMain {
+		width: min(75%, 320rem);
+	}	 
+}
+
+.contenedorSeccion {
+	opacity: 1;
+	height:100%;
+	width: 100%;
+	margin-top: 5rem;
+	margin-bottom: 10rem;
+	padding: 9rem min(5rem, 5%) 0 min(5rem, 5%);
+}
+.contenedorSeccion:first-of-type {
+	margin-top: 0;
+}
+@media (min-width: 768px) {
+	.contenedorSeccion {
+		padding: 9rem 0 0 0;
+	}
+}
+
+.titulo{
+	color: var(--rojoP);
+	font-weight: 700;
+	font-size: 2.8rem;
+	margin-bottom: 5rem;
+}
+@media (min-width: 1140px) {
+	.titulo {
+		font-size: calc(50% + 3.6vmin);
+	}
+}
+
+.textoDestacado {
+   color: var(--rojoC);
+   font-size: 1.8rem;
+	font-weight: 700;
+}
+.descripcion {
+   font-size: 1.8rem;
+	font-weight: 400;
+   margin: 2rem 0 0 0;
+	line-height: 2.3rem;
+}
+
+.active{
+	opacity: 1;
+	transition: opacity 0.5s;
+}

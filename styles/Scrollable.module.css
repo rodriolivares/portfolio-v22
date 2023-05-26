@@ -1,0 +1,6 @@
+.scrollable{
+   overflow-y: scroll;
+}
+.disableScroll{
+   overflow-y: hidden;
+}

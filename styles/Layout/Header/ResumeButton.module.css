@@ -1,0 +1,23 @@
+.descargar {
+   text-decoration: none;
+	text-decoration-skip-ink: auto;
+   color: white;
+	font-weight: 400;
+   font-size: 1.8rem;
+   background-color: inherit;
+   padding: .7rem 1.4rem;
+   border: 1px solid white;
+   border-radius: 3rem;
+   display: flex;
+   gap: 1rem;
+   align-items: center;
+}
+@media (min-width: 768px) { 
+   .descargar:hover {
+      border: 1px solid var(--rojoP);
+      cursor: pointer;
+   }
+}
+.descargar:active {
+   border: 1px solid var(--rojoP);
+}

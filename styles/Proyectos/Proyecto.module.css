@@ -1,0 +1,138 @@
+.contenedorProyecto {
+   display: flex;
+   flex-direction: column;
+}
+.nombreProyecto {
+   color: var(--rojoP);
+   font-size: 2.4rem;
+	font-weight: 400;
+   letter-spacing: -1px;
+}
+
+.contenedorDescripcionLinks {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 1rem;
+   gap: 2rem;
+}
+.contenedorLinks {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   row-gap: 1rem;
+}
+.link {
+   text-decoration: none;
+	text-decoration-skip-ink: auto;
+   color: white;
+	font-weight: 400;
+   font-size: 1.8rem;
+   background-color: inherit;
+   padding: .7rem 1.4rem;
+   border: 1px solid white;
+   border-radius: 3rem;
+   display: flex;
+   gap: 1rem;
+   align-items: center;
+   width: min-content;
+}
+@media (min-width: 768px) { 
+   .link {
+      width: max-content;
+   }
+   .link:hover {
+      border: 1px solid var(--rojoP);
+      cursor: pointer;
+   }
+}
+.link:active {
+   border: 1px solid var(--rojoP);
+}
+.imagenLink {
+   margin: auto 0;
+   border-radius: .5rem;
+}
+
+.contenedorCuerpo {
+   display: flex;
+   flex-direction: column;
+}
+.contenedorImagenDetalles {
+   display: grid;
+   position: relative;
+   width: 100%;
+   margin-top: 2rem;
+   align-items: start;
+   grid-template-columns: 1fr;
+}
+@media (min-width: 480px) {
+   .contenedorImagenDetalles{
+      grid-template-columns: repeat(10, 1fr);
+      align-items: center;
+      justify-items: stretch;
+   }
+}
+.imageWrapper {
+   position: relative;
+   aspect-ratio: 4 / 3;
+   object-fit: cover;
+   width: 100%;
+   height: auto;
+}
+.contenedorDetalles {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   position: relative;
+   z-index: 2;
+   transition: all .3s;
+}
+
+@media (min-width: 480px) {
+   .imageWrapper {
+      position: absolute;
+      z-index: 1;
+      max-width: 60rem;
+      grid-column-start: 2;
+      justify-self: end;
+      align-self: baseline;
+   }
+   .contenedorDetalles {
+      grid-column: 1 / 7;
+      backdrop-filter: blur(10px) contrast(20%);
+      margin: 2rem 0;
+      padding: 2rem;
+      justify-content: space-between;
+      row-gap: 2rem;
+   }
+   .imageWrapper:hover ~ .contenedorDetalles {
+      backdrop-filter: none;
+      opacity: 0;
+   }
+}
+
+.funcionalidades {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+.tecnologias {
+   list-style: none;
+   display: flex;
+   flex-direction: row;
+   gap: 1rem;
+   flex-wrap: wrap;
+   padding: 0;
+}
+
+.tecnologia {
+   padding: 1rem;
+   border: 1px solid var(--rojoC);
+   border-radius: 5rem;
+	font-weight: 700;
+   font-size: 1.6rem;
+}

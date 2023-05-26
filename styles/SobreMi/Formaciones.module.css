@@ -1,0 +1,8 @@
+.formacion {
+   display: flex;
+   justify-content: space-between;
+   font-size: 1.6rem;
+   margin: 0 auto;
+	padding: 3rem 0;
+	border-bottom: 1px solid var(--rojoC); 
+}

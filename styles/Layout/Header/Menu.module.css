@@ -1,0 +1,41 @@
+.mobileButton {
+	position: relative;
+	z-index: 10;
+	background-color: transparent;
+	text-transform: none;
+	will-change: contents;
+}
+.aside {
+	position: fixed;
+	z-index: 9;
+	top: 0rem;
+	bottom: 0px;
+	right: 0px;
+	padding: 5rem 1rem;
+	width: min(75vw, 30rem);
+	height: 100vh;
+	background-color: var(--negro);
+	transition: transform .5s linear;
+	display: flex;
+	align-items: center;
+	-moz-box-align: center;
+}
+.oculto {
+	transform: translateX(100vw);
+}
+.visible {
+	border-left: currentcolor solid 1px;
+	transform: translateX(0vw);
+}
+.mobileNav {
+   display: flex;
+   -moz-box-pack: justify;
+   justify-content: space-between;
+   -moz-box-align: center;
+   align-items: center;
+   width: 100%;
+   flex-direction: column;
+   text-align: center;
+	gap: 4rem;
+	margin-top: 5rem;
+}

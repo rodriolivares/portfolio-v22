@@ -1,0 +1,110 @@
+.contenedorCuerpo {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 3rem;
+}
+@media (min-width: 650px) and (max-width: 768px) {
+   .contenedorCuerpo {
+      flex-direction: row;
+      align-items: flex-start;
+   }   
+}
+@media (min-width: 910px) {
+   .contenedorCuerpo {
+      flex-direction: row;
+      align-items: flex-start;
+   }   
+}
+
+.contenedorNavegacion {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   margin: 1rem 0 0 0;
+   border-bottom: 1px solid var(--rojoC);
+}
+@media ( min-width: 650px) and (max-width: 768px) {
+   .contenedorNavegacion {
+      flex-direction: column;
+      width: 5.5rem;
+      height: 55rem;
+      padding-right: 2rem;
+      margin: 0;
+      border-bottom: none;
+      border-right: 1px solid var(--rojoC);
+   }
+}
+@media (min-width: 910px) {
+   .contenedorNavegacion {
+      flex-direction: column;
+      width: 6.5rem;
+      height: 55rem;
+      margin: 0 0 1rem 0;
+      padding-right: 2rem;
+      border-bottom: none;
+      border-right: 1px solid var(--rojoC);
+   }
+}
+.numeroProyecto {
+	font-weight: 200;
+   font-size: 1.5rem;
+}
+.contenedorBotones {
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   margin: 0 0 1rem 0;
+}
+@media ( min-width: 650px) and (max-width: 768px) {
+   .contenedorBotones {
+      flex-direction: column;
+   }
+}
+@media (min-width: 910px) {
+   .contenedorBotones {
+      flex-direction: column;
+   }
+}
+
+.boton {
+   background: var(--negro);
+   width: 100%;
+   padding: 1rem 1.5rem;
+   color: white;
+   font-size: 1.8rem;
+	font-weight: 700;
+   border: 1px solid white;
+   border-radius: 100%;
+}
+@media (min-width: 768px) {
+   .boton:hover {
+      text-shadow: 0px 0px 2px var(--rojoP), 0 0 10px red, 0 0 20px red;
+      border-color: var(--rojoP);
+      cursor: pointer;
+   }
+}
+.boton:active {
+   text-shadow: 0px 0px 2px var(--rojoP), 0 0 10px red, 0 0 20px red;
+   border-color: var(--rojoP);
+   cursor: pointer;
+}
+
+.masProyectos {
+   margin-top: 5rem;
+   border-top: 1px dotted white;
+   font-size: 1.6rem;
+   padding-top: 2rem;
+   line-height: 1.8rem;
+}
+.masProyectos a {
+   text-decoration: underline var(--rojoP);
+   font-weight: 700;
+   color: var(--rojoP);
+}
+.masProyectos a:hover {
+   color: var(--rojoS);
+   text-decoration: underline var(--rojoS);
+}

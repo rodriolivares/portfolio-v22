@@ -1,0 +1,41 @@
+.barra {
+      width: 8rem;
+      position: relative;      
+      top: -5px;
+}
+@media ((width >= 650px) and (width < 768px)), (width >= 910px) {
+      .barra {
+            rotate: 90deg;
+            left: 6px;
+      }
+}
+.barra::before {
+      position: absolute;
+      z-index: 1;
+      content: '';
+      width: 88px;
+      left: -4px;
+      height: 10px;
+      background-color: white;
+      box-shadow: 0 0 7px white;
+      border-radius: 15px;
+}
+.barra::after {
+      position: absolute;
+      z-index: 2;
+      content: '';
+      top: 2px;
+      height: 6px;
+      background-color: var(--rojoP);
+      animation: completar 20s linear both;
+      border-radius: 0 5px 5px 0;
+}
+
+@keyframes completar{
+	0% {
+      width: 0px;
+	}
+	100% {
+      width: 80px;
+	} 
+}

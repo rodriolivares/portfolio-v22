@@ -1,0 +1,49 @@
+.header {
+   margin: 0;
+   width: 100%;
+}
+@media (min-width: 768px) {
+   .frase{
+      width: 55vw;
+   }
+}
+
+.titulo {
+   font-size: calc(50% + 10vmin);
+	font-weight: 700;
+   -webkit-text-stroke: 1px var(--rojoC);
+   -webkit-text-fill-color: transparent;
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+}
+@media (min-width: 910px) {
+   .titulo {
+      font-size: calc(50% + 11vmin);
+   }
+}
+@media (min-width: 1200px) {
+   .titulo {
+      font-size: calc(50% + 13vmin);
+   }
+}
+.nombre {
+   -webkit-text-stroke: 1px white;
+   -webkit-text-fill-color: white;
+}
+
+.job {
+   font-size: calc(50% + 5vmin);
+	font-weight: 700;
+   color: var(--rojoP);
+   margin: 4.5rem 0 0 0;
+   letter-spacing: 0.07rem;
+   word-spacing: 0.2rem;
+}
+
+.frase {
+   font-size: calc(50% + 2vmin);
+	font-weight: 200;
+   margin: 1.8rem 0 0 0;
+   word-spacing: -0.1rem;
+}
